@@ -1,0 +1,248 @@
+:root {
+  /* Color */
+  --white: white;
+  --light-grey: #ecf0f1;
+  --grey: #bdc3c7;
+  --deep-yellow: #f1c40f;
+
+  /* Size */
+  --border-radius-large: 20px;
+  --border-radius-mid: 13px;
+  --border-radius-small: 5px;
+}
+
+body {
+  text-align: center;
+  margin: auto;
+  margin-top: 100px;
+
+  width: 500px;
+  height: 500px;
+
+  background-color: var(--deep-yellow);
+}
+
+button {
+  outline-style: none;
+  display: block;
+  padding: 5px;
+
+  background-color: var(--white);
+  border: none;
+  border-radius: var(--border-radius-small);
+}
+button:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
+/* Header */
+.title {
+  width: 100%;
+  padding-top: 15px;
+
+  font-size: 36px;
+  background-color: var(--light-grey);
+
+  border: 0px solid var(--light-grey);
+  border-top-right-radius: var(--border-radius-large);
+  border-top-left-radius: var(--border-radius-large);
+}
+.title-content {
+  display: block;
+  background-color: var(--light-grey);
+
+  border: 0px solid var(--light-grey);
+  border-top-right-radius: var(--border-radius-large);
+  border-top-left-radius: var(--border-radius-large);
+}
+.title-subcontent {
+  display: block;
+  font-size: 12px;
+}
+
+.search {
+  background-color: var(--light-grey);
+}
+
+.todo-search {
+  width: 50%;
+  height: 10px;
+  padding: 7px;
+  margin-top: 15px;
+
+  border: 2px solid var(--grey);
+  border-radius: var(--border-radius-small);
+
+  outline-style: none;
+  background-color: var(--grey);
+}
+.todo-search:hover {
+  transform: scale(1.02);
+}
+/* Items Section */
+.todos {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 70%;
+
+  overflow-y: auto;
+  background-color: var(--light-grey);
+}
+
+.todos--todo {
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 15px;
+  width: 400px;
+  height: 60px;
+
+  border-radius: var(--border-radius-mid);
+}
+.todos--todo:hover {
+  transform: scale(1.02);
+}
+
+.todo-left {
+  display: flex;
+  margin-left: 10px;
+  height: 100%;
+  align-items: center;
+}
+.active {
+  background-color: var(--white);
+}
+.active:hover {
+  transform: scale(1.1);
+}
+
+.todo-title {
+  background-color: var(--white);
+  padding-left: 7px;
+}
+
+.delete {
+  display: inline-block;
+  background-color: var(--white);
+  margin-right: 10px;
+}
+.delete:hover {
+  transform: scale(1.1);
+}
+.far {
+  border-radius: 50%;
+  /*background-color: black;*/
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  background-color: var(--light-grey);
+  border: 0px solid var(--light-grey);
+  border-bottom-left-radius: var(--border-radius-large);
+  border-bottom-right-radius: var(--border-radius-large);
+}
+
+.footer--todos-clear {
+  background-color: var(--light-grey);
+  margin: 15px 15px;
+}
+.todos-clear {
+  background-color: #e74c3c;
+  color: var(--white);
+  border: none;
+}
+
+.footer--todos-classify {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 15px;
+
+  background-color: var(--light-grey);
+}
+.todos-classify {
+  margin: 0px 2px;
+}
+
+.footer--create {
+  background-color: var(--light-grey);
+  margin: 15px 15px;
+}
+.create-todo {
+  background-color: #3498db;
+  color: var(--white);
+  border: none;
+}
+/* Inserting Modal */
+
+.modal {
+  visibility: hidden;
+  position: absolute;
+  transform: translateY(-100%);
+
+  width: 500px;
+  height: 500px;
+  background-color: var(--light-grey);
+  border: 0px solid black;
+  border-radius: var(--border-radius-large);
+}
+
+.modal--form {
+  width: 100%;
+}
+
+.content-form {
+  height: 100%;
+}
+
+.modal--title-input {
+  width: 80%;
+  height: 5%;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  border: 0px solid var(--white);
+  border-radius: var(--border-radius-small);
+
+  outline-style: none;
+}
+
+.modal--content-input {
+  width: 80%;
+  height: 75%;
+  padding: 10px;
+  overflow-y: auto;
+
+  border: 0px solid var(--white);
+  border-radius: var(--border-radius-small);
+
+  outline-style: none;
+}
+
+/* Inserting Modal--Footer */
+.modal--footer {
+  transform: translateY(-32%);
+}
+.modal--search {
+  visibility: hidden;
+}
+.modal--classify {
+  visibility: hidden;
+}
+
+/* View Modal */
+.view-modal {
+  visibility: hidden;
+}

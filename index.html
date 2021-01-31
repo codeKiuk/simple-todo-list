@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDos</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/04cb35f204.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <header class="title">
+        <span class="title-content">
+            ToDos
+        </span>
+        <span class="title-subcontent">Create ToDos, and Click to see the details.</span>
+    </header>
+    <form class="search">
+        <input class="todo-search" placeholder="Search">
+    </form>
+    <ul class="todos">
+        <!--
+        <li class="todos--todo">
+            <div class="todo-left">
+                <i class="far fa-circle active"></i>
+                <span class="todo-title">ToDo Title</span>
+            </div>
+            <i class="fas fa-times delete"></i>
+        </li>
+        -->
+        
+    </ul>
+    <footer class="footer">
+        <div class="footer--todos-clear">
+            <button class="todos-clear clear-completed">
+                Clear Completed
+            </button>
+        </div>
+        <div class="footer--todos-classify">
+            <button class="todos-classify show-all">All</button>
+            <button class="todos-classify show-active">Active</button>
+            <button class="todos-classify show-completed">Completed</button>
+        </div>
+        <div class="footer--create">
+            <button class="create-todo main--create-todo">Create ToDo</button>
+        </div>
+    </footer>
+                                        <!--Inserting Modal-->
+    <div class="modal">
+        <header class="title">
+            <span class="title-content">
+                ToDos
+            </span>
+            <span class="title-subcontent">Create ToDos, and Click to see the details.</span>
+        </header>
+        <main class="search modal--search">
+            <input class="todo-search" placeholder="Search">
+        </main>
+
+        <div class="todos modal--todos">  
+            <form class="modal--form title-form">
+                <input type="text" class="modal--title-input" placeholder="Title"> 
+            </form>
+            <form class="modal--form content-form">
+                <input type="text" class="modal--content-input" placeholder="Contents">
+            </form>
+        </div>
+
+        <footer class="footer modal--footer">
+            <div class="footer--todos-clear">
+                <button class="todos-clear modal--clear">
+                    Exit
+                </button>
+            </div>
+            <div class="footer--todos-classify modal--classify">
+                <button class="todos-classify">All</button>
+                <button class="todos-classify">Active</button>
+                <button class="todos-classify show-completed">Completed</button>
+            </div>
+            <div class="footer--create">
+                <button class="create-todo modal--create-todo">Create ToDo</button>
+            </div>
+        </footer>
+    </div>
+
+                                <!--View Modal-->
+    <div class="modal view-modal">
+        <header class="title">
+            <span class="title-content">
+                ToDos
+            </span>
+            <span class="title-subcontent">Create ToDos, and Click to see the details.</span>
+        </header>
+        <main class="search modal--search">
+            <input class="todo-search" placeholder="Search">
+        </main>
+
+        <div class="todos modal--todos">  
+            <form class="modal--form title-form view-modal--title-form">
+                <input type="text" class="modal--title-input view-modal--title-input" value=""> 
+            </form>
+            <form class="modal--form content-form view-modal--content-form">
+                <input type="text" class="modal--content-input view-modal--content-input" value="">
+            </form>
+        </div>
+
+        <footer class="footer modal--footer">
+            <div class="footer--todos-clear">
+                <button class="todos-clear modal--clear view-modal--clear">
+                    Exit
+                </button>
+            </div>
+            <div class="footer--todos-classify modal--classify">
+                <button class="todos-classify">All</button>
+                <button class="todos-classify">Active</button>
+                <button class="todos-classify show-completed">Completed</button>
+            </div>
+            <div class="footer--create">
+                <button class="create-todo modal--create-todo view-modal--create-todo">Create ToDo</button>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
